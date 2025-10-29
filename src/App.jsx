@@ -20,18 +20,18 @@ const App = () => {
       <Header />
       <main>
         <Banner />
-        <section className="min-h-[140vh] bg-[#141414] text-[#FFFCEC] flex flex-col items-center justify-center gap-12 relative pb-40">
-          <h2 className="text-8xl text-center leading-28 max-w-10/12 mx-auto">
+        <section className="min-h-[140vh] bg-[#141414] text-[#FFFCEC] flex flex-col items-center justify-center gap-12 relative pb-40 px-8 md:px-0">
+          <h2 className="text-4xl md:text-5xl lg:text-7xl xl:text-8xl text-center leading-12 md:leading-16 lg:leading-24 xl:leading-28 md:max-w-10/12 mx-auto">
             We believe brands shouldn’t have to fight
             algorithms to be seen. So we trade impressions
             for impact real people, real spaces, real
             reactions
           </h2>
-          <p className="absolute bottom-75  text-4xl font-text font-medium max-w-4xl text-center leading-normal">
+          <p className="absolute bottom-100 md:bottom-75 text-lg md:text-2xl lg:text-4xl font-text font-medium max-w-4xl text-center leading-normal px-8 md:px-0">
             Catch Us Outside brings marketing back to the
             messy, memorable offline world.
           </p>
-          <div className="absolute top-10 right-0 w-60">
+          <div className="absolute top-10 right-0 w-50 lg:w-60">
             <img
               src={top}
               alt="artwork"
@@ -41,7 +41,7 @@ const App = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="absolute bottom-40 left-0 w-60 z-10">
+          <div className="absolute bottom-40 left-0 w-50 md:w-60 z-10">
             <img
               src={bottom}
               alt="artwork"
@@ -51,8 +51,8 @@ const App = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="absolute bottom-0 left-0 bg-[#C0DD2B] flex items-center justify-evenly gap-10 py-6 px-14 ">
-            <div className="w-full h-full">
+          <div className="absolute bottom-0 left-0 bg-[#C0DD2B] flex items-center justify-evenly gap-6 md:gap-10 md:py-6 px-8 md:px-14 ">
+            <div className="max-md:hidden w-full h-full">
               <img
                 src={jart}
                 alt="Dr Jart"
@@ -82,7 +82,7 @@ const App = () => {
                 className="max-w-full w-full h-40 object-contain"
               />
             </div>
-            <div className="w-full h-full">
+            <div className="max-md:hidden w-full h-full">
               <img
                 src={pca}
                 alt="Dr Jart"
@@ -102,7 +102,7 @@ const App = () => {
                 className="max-w-full w-full h-40 object-contain"
               />
             </div>
-            <div className="w-full h-full">
+            <div className="max-md:hidden w-full h-full">
               <img
                 src={pvr}
                 alt="Dr Jart"

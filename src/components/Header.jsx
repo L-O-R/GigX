@@ -16,8 +16,8 @@ export default function Header() {
   const closeOnNavigate = () => setOpen(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 text-white backdrop-blur-sm py-4">
-      <nav className="mx-auto flex h-16 items-center justify-between sm:px-8 lg:px-14">
+    <header className="fixed inset-x-0 top-0 z-50 text-white backdrop-blur-sm py-4 px-8 lg:px-14">
+      <nav className="mx-auto flex h-16 items-center justify-between ">
         {/* Brand */}
         <a
           href="#home"

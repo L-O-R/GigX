@@ -4,25 +4,25 @@ import footerLogoM from "../assets/images/footLogoM.png";
 const Footer = () => {
   return (
     <footer>
-      <section className="relative z-30 max-w-[93%] mx-auto bg-[#0D1CC3] text-white flex flex-col md:flex-row justify-between items-start gap-10 py-24 pr-24 pl-10 ">
-        <header>
-          <h2 className="text-7xl font-primary text-[#fffaf5]">
+      <section className="relative z-30 max-w-[93%] mx-auto bg-[#0D1CC3] text-white flex flex-col md:flex-row justify-between items-start gap-10 py-14 px-12 md:py-24 md:pr-24 md:pl-10 text-center rounded-3xl md:rouded-2xl ">
+        <header className="text-center mx-auto">
+          <h2 className="text-4xl text-center md:text-left md:text-5xl lg:text-7xl font-primary text-[#fffaf5]">
             Let's Take It Outside
           </h2>
         </header>
-        <div className="flex flex-col gap-4 items-start text-left">
+        <div className=" mx-auto text-center flex flex-col gap-4 items-start md:text-left">
           <p className="text-base md:text-2xl leading-normal font-text font-normal max-w-xl">
             Ready to bring your brand to life? Let's build
             your next street story
           </p>
-          <button className="px-4 py-3 bg-[#C0DD2B] rounded-4xl flex items-center justify-center text-lg text-black font-text">
+          <button className="cursor-pointer mx-auto p-3 md:px-4 md:py-3 bg-[#C0DD2B] rounded-4xl flex items-center justify-center text-lg text-black font-text">
             Activate Now!
           </button>
         </div>
       </section>
       <section className="bg-[#141414] pt-30 -mt-20 ">
         <div className="max-w-[93%] mx-auto flex flex-col space-y-14">
-          <div className="flex justify-between pt-10 pb-20 ">
+          <div className="flex flex-col lg:flex-row gap-10 justify-between pt-30 lg:pt-10 pb-20 ">
             <div className="flex flex-col gap-2">
               <a href="#" target="_blank">
                 <span className="bg-white inline-flex p-3 justify-center align-center gap-4 rounded-lg font-text text-xl leading-normal tracking-[0.03rem] transition-all duration-300 ease-linear hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-yellow-50">
@@ -54,7 +54,7 @@ const Footer = () => {
               </a>
               <a
                 href="mailto:connect@studx.in"
-                className="text-5xl font-text leading-normal font-normal text-[#fdfaf7]">
+                className=" text-3xl md:text-4xl lg:text-5xl font-text leading-normal font-normal text-[#fdfaf7]">
                 connect@studx.in
               </a>
             </div>
@@ -72,8 +72,8 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="space-y-10">
-            <span className="text-white text-xl font-text block">
+          <div className="space-y-10 flex flex-col">
+            <span className="text-white text-xl font-text block order-2 lg:order-1">
               &#169; 2024 Copyrights , Designed & Developed
               by StudX
             </span>
@@ -87,9 +87,9 @@ const Footer = () => {
                 height={400}
               />
               <img
-                src={footerLogo}
+                src={footerLogoM}
                 alt="Catch Us Outside"
-                className="block lg:hidden"
+                className="block lg:hidden mb-12 w-96 h-full object-contain"
               />
             </div>
           </div>
