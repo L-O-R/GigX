@@ -13,10 +13,11 @@ import pca from "./assets/images/pca.png";
 import pvr from "./assets/images/pvr.png";
 import tir from "./assets/images/tir.png";
 import tira from "./assets/images/tira.png";
+import Header from "./components/Header";
 const App = () => {
   return (
     <div className="font-primary">
-      <header></header>
+      <Header />
       <main>
         <Banner />
         <section className="min-h-[140vh] bg-[#141414] text-[#FFFCEC] flex flex-col items-center justify-center gap-12 relative pb-40">
